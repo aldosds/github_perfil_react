@@ -1,10 +1,12 @@
 import Perfil from "./components/Perfil";
+import Formulario from "./components/Formulario";
 
 function App() {
 
   return (
     <>  
-      <Perfil/>
+      <Perfil nome="Aldo" endereco="https://github.com/aldosds.png" />
+      <Formulario/>
     </>
   )
 }
