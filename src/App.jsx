@@ -6,11 +6,21 @@ import ReposList from "./components/ReposList";
 
 function App() {
   const [formularioEstaVisivel, setFromularioEstaVisivel] = useState(true);
+  const [nomeUsuario, setNomeUsuario ] = useState('');
 
   return (
-    <>  
-      <Perfil nome="Aldo" endereco="https://github.com/aldosds.png" />
-      <ReposList/>
+    <> 
+      <div>
+          <h1>Github Perfil</h1>
+      </div>
+      <input type="text" placeholder="Digite um usuário do Github" onBlur={(e) => setNomeUsuario(e.target.value) } />
+      
+      {nomeUsuario.length > 4 && (
+        <>
+          <Perfil nomeUsuario={nomeUsuario}/>
+          <ReposList nomeUsuario={nomeUsuario}/>
+        </>
+      )}
 
       {/* {formularioEstaVisivel && (
         <Formulario/>
