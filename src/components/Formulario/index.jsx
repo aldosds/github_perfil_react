@@ -57,8 +57,15 @@ const Formulario = () => {
     }
 
     return (
-        <form> {/* Um estado diferente utilizando ({target}) removendo evento após o parseInt */}
+        <form> 
+            <ul>
+                Lista Renderizada
+                {[1,2,3,4,5].map(item => (
+                    <li key={item}>{item}</li>
+                ))}
+            </ul>
             <input type="text" placeholder="Seu nome" onChange={alteraNome} />
+            {/* Um estado diferente utilizando ({target}) removendo evento após o parseInt */}
             <input type="number" placeholder="Nota matéria A" onChange={({target}) => setMateriaA(parseInt(target.value))}/>
             <input type="number" placeholder="Nota matéria B" onChange={evento => setMateriaB(parseInt(evento.target.value))}/>
             <input type="number" placeholder="Nota matéria C" onChange={evento => setMateriaC(parseInt(evento.target.value))}/>
