@@ -15,3 +15,12 @@
     --corPrincipal:  rgb(45, 90, 45);
     --corSecundaria: #fff;
 }
+
+.btn-app {
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+    margin-bottom: 8px;
+}

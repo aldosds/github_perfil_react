@@ -14,6 +14,7 @@ function App() {
           <h1>Github Perfil</h1>
       </div>
       <input type="text" placeholder="Digite um usuário do Github" onBlur={(e) => setNomeUsuario(e.target.value) } />
+      <button className="btn-app">Clique aqui</button>
       
       {nomeUsuario.length > 4 && (
         <>
