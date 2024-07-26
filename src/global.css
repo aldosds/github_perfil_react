@@ -24,4 +24,5 @@
     background-color: var(--corPrincipal);
     color: var(--corSecundaria);
     margin-bottom: 8px;
+    cursor: pointer;
 }
