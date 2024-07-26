@@ -18,6 +18,7 @@
 
 .btn-app {
     padding: 3px;
+    margin-left: 6px;
     border: none;
     border-radius: 3px;
     background-color: var(--corPrincipal);
